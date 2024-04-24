@@ -1,0 +1,29 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+
+:root {
+  --accent-color: #ff0070;
+  --color-text: #F1B2CE;
+  --color-text-h1: #DB00FF;
+  --text-h1-shadow: #FF0070;
+  --color-text-h3: #000028;
+  --main-background-color: #000028;
+  --title-decor: #ff0070;
+  --decorated-zone: #ff0070;
+  --header-background-image: url(../images/cover-image-dark.png);
+}
+
+.page.theme_auto {
+
+  @media (prefers-color-scheme: light) {
+    .header__theme-menu::before {
+      display: none;
+    }
+    
+    .header__theme-menu::after {
+      display: none;
+    }
+  }
+}
