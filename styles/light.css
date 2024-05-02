@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #353430;
+  --link-accent-color: #FF8DCB;
   --color-text: #353430;
   --color-text-h1: #FFC2E6;
   --text-h1-shadow: #FF0070;
@@ -18,6 +19,8 @@
   --title-decor: #FF8DCB;
   --decorated-zone: #353430;
   --header-background-image: url(../images/cover-image-light.png);
+  --menu-button-hover: rgba(50, 49, 45, 0.4);
+  --menu-button-focus: rgba(50, 49, 45, 0.4);
 
   @media (width <= 768px) {
     --text-h1-shadow: #FF8DCB;
@@ -32,27 +35,10 @@
   }
 }
 
-.section__article a {
-  text-shadow: 2px 2px 0 var(--title-decor);
-  text-decoration: none;
-}
-
-.accent-color {
-  color: var(--color-text-h3);
-  background-color: var(--title-decor);
-}
-
-.header__theme-menu-button:hover {
-  outline: 1px rgba(50, 49, 45, 0.4) solid;
-}
-
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px rgba(50, 49, 45, 0.4) solid;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #353430;
+    --link-accent-color: #FF8DCB;
     --color-text: #353430;
     --color-text-h1: #FFC2E6;
     --text-h1-shadow: #FF0070;
@@ -61,27 +47,11 @@
     --title-decor: #FF8DCB;
     --decorated-zone: #353430;
     --header-background-image: url(../images/cover-image-light.png);
+    --menu-button-hover: rgba(50, 49, 45, 0.4);
+    --menu-button-focus: rgba(50, 49, 45, 0.4);
 
     @media (width <= 768px) {
       --text-h1-shadow: #FF8DCB;
     }
   }
-}
-
-.section__article a {
-  text-shadow: 2px 2px 0 var(--title-decor);
-  text-decoration: none;
-}
-
-.accent-color {
-  color: var(--color-text-h3);
-  background-color: var(--title-decor);
-}
-
-.header__theme-menu-button:hover {
-  outline: 1px rgba(50, 49, 45, 0.4) solid;
-}
-
-.header__theme-menu-button:focus-visible {
-  border-bottom: 1px rgba(50, 49, 45, 0.4) solid;
 }

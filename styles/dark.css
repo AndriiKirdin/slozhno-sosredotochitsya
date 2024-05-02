@@ -10,6 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff0070;
+  --link-accent-color: #ff0070;
   --color-text: #F1B2CE;
   --color-text-h1: #DB00FF;
   --text-h1-shadow: #FF0070;
@@ -18,6 +19,8 @@
   --title-decor: #ff0070;
   --decorated-zone: #ff0070;
   --header-background-image: url(../images/cover-image-dark.png);
+  --menu-button-hover: rgba(255, 0, 112, 0.4);
+  --menu-button-focus: #ff0070;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +30,7 @@
       чем стили в медиазапросе предпочтений пользователя
     */
     --accent-color: #ff0070;
+    --link-accent-color: #ff0070;
     --color-text: #F1B2CE;
     --color-text-h1: #DB00FF;
     --text-h1-shadow: #FF0070;
@@ -35,5 +39,7 @@
     --title-decor: #ff0070;
     --decorated-zone: #ff0070;
     --header-background-image: url(../images/cover-image-dark.png);
+    --menu-button-hover: rgba(255, 0, 112, 0.4);
+    --menu-button-focus: #ff0070;
   }
 }

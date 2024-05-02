@@ -100,7 +100,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px rgba(255, 0, 112, 0.4) solid;
+  outline: 1px var(--menu-button-hover) solid;
 }
 
 .header__theme-menu-button_active {
@@ -109,7 +109,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px var(--accent-color) solid;
+  border-bottom: 1px var(--menu-button-focus) solid;
 }
 
 .header__rec {
@@ -137,7 +137,7 @@
   border-radius: 50%;
 }
 
-.header__h1 {
+.header__title {
   color: var(--color-text-h1);
   padding-block-start: 64px;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -185,11 +185,11 @@
   column-gap: 10px;
 }
 
-.section__2 {
+.cause {
   padding-block-end: 10px;
 }
 
-.section__title {
+.section-title {
   width: min(100%, 320px);
   padding-block-end: 20px;
   font-size: 18px;
@@ -199,7 +199,7 @@
   color: var(--accent-color);
 }
 
-.section__article-title {
+.article-title {
   font-size: 18px;
   font-weight: 700;
   line-height: 23.4px;
@@ -216,7 +216,7 @@
 }
 
 .section__article a {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--link-accent-color);
   text-decoration: none;
 }
 
@@ -234,20 +234,20 @@
   line-height: 23.4px;
   text-align: left;
   color: var(--color-text-h3);
-  background-color: var(--accent-color);
+  background-color: var(--title-decor);
 }
 
 .accent-color:first-of-type {
   margin-block-start: 20px;
 }
 
-.main__article {
+.cause__article {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
 
-.main__article p {
+.cause__article p {
   padding-block: 10px 10px;
   font-size: 18px;
   line-height: 23.4px;
@@ -356,7 +356,7 @@
     padding-inline-end: 20px;
   }
 
-  .header__h1 {
+  .header__title {
     padding-block-start: 106px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-weight: 700;
@@ -432,7 +432,7 @@
     text-align: left;
   }
 
-  .header__h1 {
+  .header__title {
     padding-block-start: 15px;
     padding-inline-start: 10px;
     line-height: 95.7px;
@@ -474,7 +474,7 @@
     column-gap: 10px;
   }
 
-  .section__title {
+  .section-title {
     width: min(100%, 375px);
     padding-block-end: 20px;
   }
