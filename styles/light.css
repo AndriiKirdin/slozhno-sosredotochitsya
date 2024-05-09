@@ -20,7 +20,8 @@
   --decorated-zone: #353430;
   --header-background-image: url(../images/cover-image-light.png);
   --menu-button-hover: rgba(50, 49, 45, 0.4);
-  --menu-button-focus: rgba(50, 49, 45, 0.4);
+  --menu-button-focus: rgba(53, 52, 48, 1);
+  --menu-button-active: rgba(53, 52, 48, 1);
 
   @media (width <= 768px) {
     --text-h1-shadow: #FF8DCB;
@@ -48,7 +49,8 @@
     --decorated-zone: #353430;
     --header-background-image: url(../images/cover-image-light.png);
     --menu-button-hover: rgba(50, 49, 45, 0.4);
-    --menu-button-focus: rgba(50, 49, 45, 0.4);
+    --menu-button-focus: rgba(53, 52, 48, 1);
+    --menu-button-active: rgba(53, 52, 48, 1);
 
     @media (width <= 768px) {
       --text-h1-shadow: #FF8DCB;

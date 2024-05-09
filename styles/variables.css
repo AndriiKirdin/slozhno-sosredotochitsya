@@ -14,8 +14,9 @@
   --title-decor: #ff0070;
   --decorated-zone: #ff0070;
   --header-background-image: url(../images/cover-image-dark.png);
-  --menu-button-hover: rgba(255, 0, 112, 0.4);
-  --menu-button-focus: #ff0070;
+  --menu-button-hover: rgba(50, 49, 45, 0.4);
+  --menu-button-focus: rgba(53, 52, 48, 1);
+  --menu-button-active: rgba(53, 52, 48, 1);
 }
 
 .page.theme_auto {
