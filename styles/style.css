@@ -86,7 +86,7 @@
   color: var(--accent-color);
   background-color: transparent;
   padding-inline: 13px;
-  padding-block-end: 5px;
+  padding-block-end: 4px;
   border: 0;
   outline: 0;
   line-height: 18px;
@@ -173,7 +173,6 @@
   padding-inline: 20px;
   display: grid;
   row-gap: 60px;
-  background-color: var(--main-background-color);
 }
 
 .section {
@@ -317,18 +316,16 @@
   text-shadow: 2px 2px 0 var(--text-h1-shadow);
 }
 
-@media (width <= 768px) {
+@media (width < 1024px) {
   .header {
-    max-width: 768px;
-    min-height: 1024px;
+    max-width: 1024px;
   }
+
   .header__theme-menu-list {
-    display: flex;
     padding-inline-end: 20px;
     padding-block-start: 190px;
     flex-direction: column;
     align-items: end;
-    gap: 10px;
   }
 
   .header__section p {
@@ -344,7 +341,7 @@
     padding-block-start: 106px;
   }
 
-  .section__title {
+  .section-title {
     width: min(100%, 236px);
     padding-block-end: 20px;
   }
@@ -359,28 +356,29 @@
     row-gap: 10px;
   }
 
+  .cause__article {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
   .footer {
-    max-width: 768px;
-    min-height: 1024px;
+    max-width: 1024px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 }
 
-@media (width <= 376px) {
+@media (width < 768px) {
   .header {
-    max-width: 375px;
-    min-height: 668px;
+    max-width: 768px;
     grid-template-rows: repeat(3, 1fr);
     column-gap: 10px;
   }
 
   .header__theme-menu-list {
-    display: flex;
     padding-inline-end: 10px;
     padding-block-start: 73px;
-    flex-direction: column;
-    align-items: end;
-    gap: 10px;
   }
 
   .header__section {
@@ -423,7 +421,7 @@
   }
 
   .main {
-    max-width: 375px;
+    max-width: 768px;
     margin: auto;
     padding-block-start: 40px;
     padding-inline: 10px;
@@ -438,8 +436,14 @@
   }
 
   .section-title {
-    width: min(100%, 375px);
+    width: min(100%, 350px);
     padding-block-end: 20px;
+  }
+
+  .cause__article {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
   }
 
   .section__gallery {
@@ -460,14 +464,6 @@
     "image-5";
   }
 
-  .gallery__image-sunset {
-    grid-area: image-1;
-  }
-
-  .gallery__image-ice-cream {
-    grid-area: image-2;
-  }
-
   .gallery__image-books {
     grid-area: image-4;
   }
@@ -476,19 +472,8 @@
     grid-area: image-3;
   }
 
-  .gallery__image-street {
-    grid-area: image-5;
-  }
-
-  .image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
   .footer {
-    max-width: 375px;
-    min-height: 668px;
+    max-width: 768px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     line-height: 95.7px;
     letter-spacing: -2px;
